@@ -1,0 +1,16 @@
+for i in range(5):
+    f= open("customer.txt",'a')
+    print(f"\n customer {i+1}")
+    name = input("please enter a name :")
+    age = input("please enter a age :")
+    gender = input("please enter a gender :")
+    city = input("please enter a city :")
+    country = input("please enter a country :")
+    text = f.write(f"{name}\n,{age}\n,{gender}\n,{city}\n,{country}")
+    print(text)
+f.close()
+
+f = open('customer.txt','r')
+text = f.read()
+print(text)
+f.close()
